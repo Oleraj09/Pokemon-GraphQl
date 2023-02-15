@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ubuntu;
+    src: url(/assets/font/Ubuntu-Regular.ttf);
+}
+
+body {
+    font-family: "ubuntu", sans-serif;
+}
+
+#top-section {
+    height: 120vh;
+    background: url(/assets/media/Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.texture {
+    height: 120vh;
+    background: url(/assets/media/Texture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo>.set {
+    height: 60px;
+    width: 220px;
+    margin: 3% 0;
+}
+
+.logo>.set>img {
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    width: 180px !important;
+    box-shadow: none;
+    clip-path: polygon(100% 0, 100% 82%, 79% 100%, 0 100%, 0 0);
+}
+
+.card:hover {
+    background: #3383C8 !important;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover .card-title {
+    color: white;
+    transition: 0.3s ease-in-out;
+    animation: shake 0.2s;
+}
+
+@keyframes shake {
+    from {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(2px)
+    }
+}
+
+.c-image {
+    margin: -7px -7px -7px -7px !important;
+    height: 150px;
+    border-radius: 3%;
+    overflow: hidden;
+    background: #F2F2F2;
+}
+
+.c-image>img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2%;
+}
+
+.card:hover .c-image>img {
+    background-size: cover;
+    transform: scale(1.1);
+    transition: 0.2s all ease-in-out;
+}
+
+.c-info {
+    margin: 0;
+    padding-top: 5px;
+}
+
+.mybutton {
+    margin: 0;
+    font-size: 10px;
+    height: 20px;
+    width: 60px;
+    color: white;
+    font-weight: 600;
+    border: none;
+}
+
+.card:hover .mybutton {
+    transition: 0.3s ease-in-out;
+    animation: shake1 0.2s;
+}
+
+@keyframes shake1 {
+    from {
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateX(2px);
+        transform: translateY(2px);
+    }
+}
+
+.nolink {
+    text-decoration: none;
+}
+
+.card-title {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    font-size: 15px;
+}
+
+.g {
+    background: blue;
+}
+
+.w {
+    background: peru;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+#item-page {
+    height: auto
+}
+
+.body {
+    position: relative;
+    height: auto;
+}
+
+.left {
+    position: absolute;
+    left: 0;
+    margin-top: -20%;
+}
+
+.right {
+    position: absolute;
+    right: 0;
+    margin-top: -20%;
+
+}
+
+.sideimage {
+    height: fit-content;
+}
+
+.sideimage>img {
+    width: 100px;
+}
+
+.center {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    /* text-align: center; */
+}
+
+.box-item {
+    position: relative;
+    height: 160px;
+    width: 200px;
+    -webkit-clip-path: polygon(100% 0, 100% 77%, 79% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 77%, 79% 100%, 0 100%, 0 0);
+    background: salmon;
+    border-radius: 2%;
+}
+
+.box-itemx {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 156px;
+    width: 196px;
+    -webkit-clip-path: polygon(100% 0, 100% 77%, 79% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 77%, 79% 100%, 0 100%, 0 0);
+    background: white;
+    border-radius: 2%;
+}
+
+.pokemon {
+    margin: 15% 0px;
+    border-radius: 3%;
+    overflow: hidden;
+
+}
+
+.pokemon>img {
+    height: 100%;
+    width: 100%;
+    border-radius: 2%;
+}
+
+.pokemon>img:hover {
+    background-size: cover;
+    transform: scale(1.1);
+    transition: 0.4s all ease-in-out;
+}
+
+.progress {
+    --bs-progress-height: 0.2rem !important;
+    --bs-progress-bar-bg: #3383C8 !important;
+}
+
+.homebutton {
+    height: 30px;
+    background: yellow;
+    color: white;
+    border: none;
+    padding: 2px 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.homebutton:hover {
+    height: 30px;
+    background: yellow;
+    color: white;
+    border: 2px solid rgb(128, 128, 231);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.shadows {
+    height: 10px;
+    width: 10px;
+    background: #3383C8;
+    filter: drop-shadow(-16px 100px 39px #000);
+}
+
+p.tag {
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+h6.title {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+p.title {
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#bottom {
+    position: absolute;
+    z-index: -1;
+}
+
+.lefthome {
+    float: left;
+    position: relative;
+    z-index: 2;
+    left: 0;
+}
+
+.centerhome {
+    position: absolute;
+    float: left;
+    z-index: -2;
+    left: 8%;
+    right: 8%;
+}
+
+.righthome {
+    float: right;
+}
+
+.title {
+    padding-top: 5%;
+}
+
+.intro {
+    background: url(/assets/media/Brush.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+
+p.text {
+    padding-left: 35%;
+    text-align: center;
+    color: #3383C8;
+
+}
+
+.desc {
+    font-size: 13px;
+}
+
+.image-text {
+    height: 140px;
+    width: 120px;
+}
+
+.image-text>img {
+    height: 100%;
+    width: 100%;
+}
