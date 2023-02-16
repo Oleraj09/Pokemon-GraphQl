@@ -2,14 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-// import Home from './components/Home';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App'
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+const client = new ApolloClient({
+  uri: 'https://graphql-pokeapi.vercel.app/api/graphql',
+  cache: new InMemoryCache(),
+});
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App/>
+      <ApolloProvider client={client}>
+        <App />
+      </ApolloProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

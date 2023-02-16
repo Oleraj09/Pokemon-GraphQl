@@ -1,203 +1,41 @@
 import React from 'react'
 import Header from './Header'
+import Charecter from '../api/charecter'
 function Home() {
     return (
         <div>
             <main>
                 <section id="top-section">
-                    <div class="container texture">
+                    <div className="container texture">
                         <Header />
-                        <div class="row row-cols-lg-5 row-cols-md-3">
-
-                            <div class="col py-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a class="nolink" href="/pokemon">
-                                            <div class="c-image">
-                                                <img src="./assets/media/pokemon.png" alt="" />
-                                            </div>
-                                            <div class="c-info">
-                                                <h5 class="card-title">Pokemon</h5>
-                                                <button class="mybutton g px-3 py-0 me-2 rounded-1">Grass</button>
-                                                <button class="mybutton w px-3 py-0 rounded-1">Water</button>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col py-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a class="nolink" href="/pokemon">
-                                            <div class="c-image">
-                                                <img src="./assets/media/pokemon.png" alt="" />
-                                            </div>
-                                            <div class="c-info">
-                                                <h5 class="card-title">Pokemon</h5>
-                                                <button class="mybutton g px-3 py-0 me-2 rounded-1">Grass</button>
-                                                <button class="mybutton w px-3 py-0 rounded-1">Water</button>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col py-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a class="nolink" href="/pokemon">
-                                            <div class="c-image">
-                                                <img src="./assets/media/pokemon.png" alt="" />
-                                            </div>
-                                            <div class="c-info">
-                                                <h5 class="card-title">Pokemon</h5>
-                                                <button class="mybutton g px-3 py-0 me-2 rounded-1">Grass</button>
-                                                <button class="mybutton w px-3 py-0 rounded-1">Water</button>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col py-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a class="nolink" href="/pokemon">
-                                            <div class="c-image">
-                                                <img src="./assets/media/pokemon.png" alt="" />
-                                            </div>
-                                            <div class="c-info">
-                                                <h5 class="card-title">Pokemon</h5>
-                                                <button class="mybutton g px-3 py-0 me-2 rounded-1">Grass</button>
-                                                <button class="mybutton w px-3 py-0 rounded-1">Water</button>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col py-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a class="nolink" href="/pokemon">
-                                            <div class="c-image">
-                                                <img src="./assets/media/pokemon.png" alt="" />
-                                            </div>
-                                            <div class="c-info">
-                                                <h5 class="card-title">Pokemon</h5>
-                                                <button class="mybutton g px-3 py-0 me-2 rounded-1">Grass</button>
-                                                <button class="mybutton w px-3 py-0 rounded-1">Water</button>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col py-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a class="nolink" href="/pokemon">
-                                            <div class="c-image">
-                                                <img src="./assets/media/pokemon.png" alt="" />
-                                            </div>
-                                            <div class="c-info">
-                                                <h5 class="card-title">Pokemon</h5>
-                                                <button class="mybutton g px-3 py-0 me-2 rounded-1">Grass</button>
-                                                <button class="mybutton w px-3 py-0 rounded-1">Water</button>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col py-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a class="nolink" href="/pokemon">
-                                            <div class="c-image">
-                                                <img src="./assets/media/pokemon.png" alt="" />
-                                            </div>
-                                            <div class="c-info">
-                                                <h5 class="card-title">Pokemon</h5>
-                                                <button class="mybutton g px-3 py-0 me-2 rounded-1">Grass</button>
-                                                <button class="mybutton w px-3 py-0 rounded-1">Water</button>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col py-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a class="nolink" href="/pokemon">
-                                            <div class="c-image">
-                                                <img src="./assets/media/pokemon.png" alt="" />
-                                            </div>
-                                            <div class="c-info">
-                                                <h5 class="card-title">Pokemon</h5>
-                                                <button class="mybutton g px-3 py-0 me-2 rounded-1">Grass</button>
-                                                <button class="mybutton w px-3 py-0 rounded-1">Water</button>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col py-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a class="nolink" href="/pokemon">
-                                            <div class="c-image">
-                                                <img src="./assets/media/pokemon.png" alt="" />
-                                            </div>
-                                            <div class="c-info">
-                                                <h5 class="card-title">Pokemon</h5>
-                                                <button class="mybutton g px-3 py-0 me-2 rounded-1">Grass</button>
-                                                <button class="mybutton w px-3 py-0 rounded-1">Water</button>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col py-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <a class="nolink" href="/pokemon">
-                                            <div class="c-image">
-                                                <img src="./assets/media/pokemon.png" alt="" />
-                                            </div>
-                                            <div class="c-info">
-                                                <h5 class="card-title">Pokemon</h5>
-                                                <button class="mybutton g px-3 py-0 me-2 rounded-1">Grass</button>
-                                                <button class="mybutton w px-3 py-0 rounded-1">Water</button>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
+                        <Charecter />
                     </div>
                 </section>
 
                 <section id="bottom d-flex">
-                    <div class="lefthome"><img src="/assets/media/Left.png" style={{ width: "80px" }} alt="" /></div>
-                    <div class="centerhome">
-                        <div class="title">
-                            <h3 class="intro">
-                                <p class="text">Ash and Pickacu Arrive In <br /> Pokemon Universe</p>
+                    <div className="lefthome"><img src="/assets/media/Left.png" style={{ width: "80px" }} alt="" /></div>
+                    <div className="centerhome">
+                        <div className="title">
+                            <h3 className="intro">
+                                <p className="text">Ash and Pickacu Arrive In <br /> Pokemon Universe</p>
                             </h3>
-                            <div class="desc">
-                                <div class="row">
+                            <div className="desc">
+                                <div className="row">
 
-                                    <div class="col-6 py-3 text-justify">
-                                        <div class="row">
-                                            <div class="col-9">
+                                    <div className="col-6 py-3 text-justify">
+                                        <div className="row">
+                                            <div className="col-9">
                                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor maxime ut
                                                     minus quas labore adipisci et vitae reiciendis excepturi aperiam vero,
                                                     ducimus reprehenderit harum earum!</p>
-                                                <div class="row">
-                                                    <div class="col-8">Lorem ipsu consectetur adipisicing elit. Repellendus,
+                                                <div className="row">
+                                                    <div className="col-8">Lorem ipsu consectetur adipisicing elit. Repellendus,
                                                         nihil! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
                                                         consequuntur illo cum voluptate exercitationem ad fuga reprehenderit
                                                         aperiam consectetur. Unde! dvoluptate deleniti ratione accusamus laborum
                                                         cupiditate aperiam vel?</div>
-                                                    <div class="col-4">
-                                                        <div class="image-text py-2">
+                                                    <div className="col-4">
+                                                        <div className="image-text py-2">
                                                             <img src="/assets/media/Image04.png" alt="" />
                                                         </div>
                                                     </div>
@@ -206,21 +44,21 @@ function Home() {
                                                     minus quas labore adipisci et vitae reiciendis excepturi aperiam vero,
                                                     ducimus reprehenderit harum earum!</p>
                                             </div>
-                                            <div class="col-3">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="image-text py-2">
+                                            <div className="col-3">
+                                                <div className="row">
+                                                    <div className="col-12">
+                                                        <div className="image-text py-2">
                                                             <img src="/assets/media/Image03.png" alt="" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-12">
-                                                        <div class="image-text py-2">
+                                                    <div className="col-12">
+                                                        <div className="image-text py-2">
                                                             <img src="/assets/media/Image02.png" alt="" />
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-12">
+                                            <div className="col-12">
                                                 <p>
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rerum
                                                     doloremque excepturi odio voluptatum quaerat mollitia cumque eum illum iure!
@@ -233,9 +71,9 @@ function Home() {
                                         </div>
                                     </div>
 
-                                    <div class="col-6 py-3 text-justify">
-                                        <div class="row">
-                                            <div class="col-12">
+                                    <div className="col-6 py-3 text-justify">
+                                        <div className="row">
+                                            <div className="col-12">
                                                 <p>
                                                     Lorem ipsum dolor sit amet, consectetur adipisicing
                                                     elit. Dolor obcaecati libero voluptas. Inventore maiores beatae, ex quia
@@ -244,12 +82,12 @@ function Home() {
                                                     obcaecati? Commodi
                                                 </p>
                                             </div>
-                                            <div class="col-3">
-                                                <div class="image-text py-2">
+                                            <div className="col-3">
+                                                <div className="image-text py-2">
                                                     <img src="/assets/media/Image03.png" alt="" />
                                                 </div>
                                             </div>
-                                            <div class="col-9">
+                                            <div className="col-9">
                                                 <p>
                                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet eligendi
                                                     nulla unde quod, ipsum quidem eum praesentium harum quia, eaque blanditiis
@@ -257,12 +95,12 @@ function Home() {
                                                     soluta neque vitae ex quis possimus ratione non esse incidunt.
                                                 </p>
                                             </div>
-                                            <div class="col-3">
-                                                <div class="image-text py-2">
+                                            <div className="col-3">
+                                                <div className="image-text py-2">
                                                     <img src="/assets/media/Image01.png" alt="" />
                                                 </div>
                                             </div>
-                                            <div class="col-9">
+                                            <div className="col-9">
                                                 <p>
                                                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet eligendi
                                                     nulla unde quod, ipsum quidem eum praesentium harum quia, eaque blanditiis
@@ -270,7 +108,7 @@ function Home() {
                                                     soluta neque vitae ex quis possimus ratione non esse incidunt.
                                                 </p>
                                             </div>
-                                            <div class="col-12">
+                                            <div className="col-12">
                                                 <p>
                                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae id nobis
                                                     eaque porro quasi omnis recusandae autem enim odio mollitia qui laudantium,
@@ -284,7 +122,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                    <div class="righthome"><img src="/assets/media/Left.png" alt="" style={{ width: "80px" }} /></div>
+                    <div className="righthome"><img src="/assets/media/Left.png" alt="" style={{ width: "80px" }} /></div>
                 </section>
             </main>
         </div>
