@@ -1,3 +1,19 @@
+## Pokemon :: A React app with pokemon GraphQL API
+
+GraphQL API - A PlayGround of Pokemon API to fetch data. This Project Built with React and GraphQL. Additional HTML, CSS used to build this project.
+
+However this is simple and minimal project that i created.
+## Demo
+
+``` Main Page ```
+
+<img src="https://raw.githubusercontent.com/Oleraj09/Pokemon-GraphQl/master/image/localhost_3000_.png" alt="Desktop Homepage">
+
+``` Pokemon Details ```
+
+<img src="https://raw.githubusercontent.com/Oleraj09/Pokemon-GraphQl/master/image/localhost_3000_pokemon.png" alt="Item wise Show item">
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
